@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasir.BarangController">
+   <children>
+      <Label layoutX="258.0" layoutY="14.0" text="BARANG">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="101.0" text="Barcode*">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldBarcode" layoutX="91.0" layoutY="99.0" />
+      <Label layoutX="29.0" layoutY="162.0" text="Nama">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldNama" layoutX="91.0" layoutY="160.0" />
+      <Label layoutX="24.0" layoutY="229.0" text="Expired">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldExpired" layoutX="91.0" layoutY="227.0" />
+      <Label layoutX="21.0" layoutY="294.0" text="Kategori">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldKategori" layoutX="91.0" layoutY="292.0" />
+      <Label layoutX="343.0" layoutY="101.0" text="Harga">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldHarga" layoutX="416.0" layoutY="99.0" />
+      <TextField fx:id="textFieldJumlah" layoutX="416.0" layoutY="160.0" />
+      <TextField fx:id="textFieldDiskon" layoutX="416.0" layoutY="227.0" />
+      <Label layoutX="339.0" layoutY="162.0" text="Jumlah">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="229.0" text="Diskon">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMakanan" layoutX="21.0" layoutY="44.0" mnemonicParsing="false" onAction="#toMakanan" text="Ke Makanan">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="469.0" layoutY="344.0" mnemonicParsing="false" onAction="#deleteBarang" text="Hapus">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="343.0" layoutY="344.0" mnemonicParsing="false" onAction="#addBarang" text="Tambah">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCek" layoutX="419.0" layoutY="344.0" mnemonicParsing="false" onAction="#cekBarang" text="Cek">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="350.0" text="* Wajib diisi" />
+      <Button fx:id="btnBack" layoutX="535.0" layoutY="344.0" mnemonicParsing="false" onAction="#toHome" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
