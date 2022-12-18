@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasir.OutputMakananController">
+   <children>
+      <TableView fx:id="viewMakanan" layoutX="-1.0" layoutY="-1.0" prefHeight="364.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="viewId" prefWidth="85.33334600925446" text="Id" />
+          <TableColumn fx:id="viewDaya" prefWidth="94.6666488647461" text="Daya Tahan" />
+            <TableColumn fx:id="viewNama" prefWidth="98.66670227050781" text="Nama" />
+            <TableColumn fx:id="viewHarga" prefWidth="102.6666259765625" text="Harga" />
+            <TableColumn fx:id="viewJumlah" prefWidth="108.666748046875" text="Jumlah" />
+            <TableColumn fx:id="viewDiskon" prefWidth="109.99996948242188" text="Diskon" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="534.0" layoutY="363.0" mnemonicParsing="false" onAction="#toMakanan" text="Back" />
+   </children>
+</AnchorPane>
